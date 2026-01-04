@@ -157,10 +157,9 @@ input:focus {
 
     height: 70px;
     width: 70px;
-    background-color: wheat;
     border-radius: 50%;
-
 }
+
 
 .headerBtm>div>p {
     align-self: end;
@@ -271,8 +270,7 @@ input:focus {
     padding-bottom: 10px;
 }
 
-.newsBox h1,
-.trendBox h1 {
+.newsBox h1 {
     font-size: 1rem;
     margin-top: 20px;
     margin-left: 20px;
@@ -288,7 +286,16 @@ input:focus {
 .trendItem {
     display: grid;
     grid-template-columns: 50px 2fr;
-    grid-template-rows: auto;
+    grid-template-rows: 25px 25px;
+
+    font-size: 1rem;
+
+    margin-bottom: 20px;
+}
+
+.trendItem h1 {
+    font-size: 1rem;
+    padding-left: 20px;
 }
 
 .pfpT {
