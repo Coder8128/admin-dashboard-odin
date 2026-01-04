@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Roboto";
 }
 
 html,
@@ -11,7 +11,12 @@ body {
     background-color: rgb(213, 218, 226);
 }
 
-
+@font-face {
+    font-family: "Roboto";
+    src: url("assets/Fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
 
 
 
@@ -190,7 +195,8 @@ input:focus {
 .col1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px auto;
+    grid-template-rows: 30px;
+    grid-auto-rows: 200px;
     padding-top: 20px;
     padding-left: 20px;
     gap: 20px;
@@ -198,10 +204,37 @@ input:focus {
     text-align: left;
 }
 
+
+
 .projectBox {
     background-color: white;
+    border-radius: 0.5rem;
+    padding: 30px;
 
+    position: relative;
+}
 
+.projectBox::before {
+    content: ' ';
+    position: absolute;
+    width: 7px;
+    height: 200px;
+    background-color: orange;
+    top: 0;
+    left: 0;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.projectBox>h1 {
+    font-size: 1rem;
+}
+
+.projectBox>p {
+    font-size: 1rem;
+    color: gray;
 }
 
 .col1>h1 {
