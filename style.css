@@ -199,6 +199,7 @@ input:focus {
     grid-auto-rows: 200px;
     padding-top: 20px;
     padding-left: 20px;
+    padding-right: 10px;
     gap: 20px;
 
     text-align: left;
@@ -243,5 +244,58 @@ input:focus {
 }
 
 .col2 {
-    border: solid black;
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+
+}
+
+
+.col2>div>h1 {
+    margin-bottom: 14px;
+    margin-top: 14px;
+    font-size: 2vh;
+
+}
+
+.newsBox {
+    background-color: white;
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 10px;
+}
+
+.newsBox h1,
+.trendBox h1 {
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.newsBox p,
+.trendBox p {
+    color: gray;
+    margin-left: 20px;
+}
+
+.trendItem {
+    display: grid;
+    grid-template-columns: 50px 2fr;
+    grid-template-rows: auto;
+}
+
+.pfpT {
+    grid-row: 1 / 3;
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
 }
