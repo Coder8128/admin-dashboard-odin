@@ -58,8 +58,32 @@ body {
     grid-row: 1 / 2;
 
     display: grid;
-    grid-template-columns: 4fr 1fr 1fr 1fr;
+    grid-template-columns: 6fr 1fr 1fr 1fr;
 }
+
+.headerTop> :first-child {
+    margin-left: 50px;
+    display: flex;
+}
+
+img[alt="magn"] {
+    align-self: center;
+}
+
+.headerTop input {
+    width: 80%;
+    padding: 6px;
+    margin: 25px 15px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border: 0;
+    background-color: rgb(227, 227, 227);
+}
+
+input:focus {
+    /* remove border focus color*/
+}
+
 
 .headerBtm {
     display: grid;
